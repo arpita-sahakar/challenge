@@ -21,6 +21,11 @@ const getUsers = () => {
     return mockDBCall(dataAccessMethod);
 };
 
+const getItems = () => {
+    const dataAccessMethod = () => db.allItems;
+    return mockDBCall(dataAccessMethod);
+}
+
 const getListOfAgesOfUsersWith = (item) => {
     const dataAccessMethod = () => {
         // console.log("item received is " + item);
@@ -69,5 +74,6 @@ const getListOfAgesOfUsersWith = (item) => {
 
 module.exports = {
     getUsers,
-    getListOfAgesOfUsersWith
+    getListOfAgesOfUsersWith,
+    getItems
 };
