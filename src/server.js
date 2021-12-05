@@ -5,7 +5,7 @@ const registerRoutes = require('./routes');
 const path = require('path')
 
 // server config
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 // Serve static content for the app from the "public" directory in the application directory.
 const publicDirPath = path.join(__dirname, '../', 'public');
