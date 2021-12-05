@@ -9,11 +9,11 @@ import TableRow from '@mui/material/TableRow';
 function AgeDemographicTable({ result }) {
     return (
         <TableContainer >
-            <Table sx={{ minWidth: 650, maxWidth: 1000 }} aria-label="simple table">
+            <Table sx={{ minWidth: 100, maxWidth: 300 }} aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell>Age</TableCell>
-                        <TableCell>Count</TableCell>
+                        <TableCell style={{ fontWeight: 'bold' }}>Age</TableCell>
+                        <TableCell style={{ fontWeight: 'bold' }} align="right">Count</TableCell>
 
                     </TableRow>
                 </TableHead>

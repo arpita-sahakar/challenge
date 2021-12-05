@@ -10,11 +10,11 @@ import TableRow from '@mui/material/TableRow';
 function UserTable({ users }) {
     return (
         <TableContainer >
-            <Table sx={{ minWidth: 650, maxWidth: 1000 }} aria-label="simple table">
-                <TableHead>
+            <Table sx={{ minWidth: 100, maxWidth: 500 }} aria-label="simple table">
+                <TableHead >
                     <TableRow>
-                        <TableCell>Username</TableCell>
-                        <TableCell align="right">Age</TableCell>
+                        <TableCell style={{ fontWeight: 'bold' }}>Username</TableCell>
+                        <TableCell style={{ fontWeight: 'bold' }} align="right">Age</TableCell>
 
                     </TableRow>
                 </TableHead>

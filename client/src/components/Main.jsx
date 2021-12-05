@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import UserTable from './UserTable';
+import './Styles.css';
 
 function Main() {
     //State to capture all users
@@ -15,7 +16,7 @@ function Main() {
     }, [])
 
     return (
-        <div className="Main">
+        <div className="common">
             <h1>All Users</h1>
             <p>Users and their age</p>
             <UserTable users={users} />

@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 import AgeDemographicTable from './AgeDemographicTable';
+import './Styles.css';
 
 
 function AgeDemographic() {
@@ -31,7 +32,7 @@ function AgeDemographic() {
     }, [])
 
     return (
-        <div>
+        <div className="common">
             <h1>Age Demographic of Users With ___</h1>
             <DropdownButton
                 id="dropdown-basic-button"
